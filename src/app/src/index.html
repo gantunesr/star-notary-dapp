@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StarNotary DApp</title>
+  </head>
+  <style>
+
+    .header-title {
+      text-align: center;
+      font-family: 'Trebuchet MS';
+    }
+
+    .form-title {
+      text-align: center;
+      font-family: 'Trebuchet MS';
+    }
+
+    .info-box {
+      margin-left: 25%;
+      margin-right: 25%;
+      background-color: #F5F5F5;
+      height: 100px;
+      width: 50%;
+      border-radius: 10px;
+    }
+
+    input {
+      display: block;
+      margin-bottom: 12px;
+      height: 30px;
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      border-radius: 5px;
+    }
+
+    button {
+      font-family: 'Trebuchet MS';
+      transition-duration: 0.4s;
+      border: none;
+      background-color: #0000A0;
+      border-radius: 10px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-left: 10%;
+      margin-right: 10%;
+      width: 80%;
+    }
+
+    .starNotaryForm {
+      width: 30%;
+      padding-left: 2%;
+      padding-right: 1%;
+      font-family: 'Trebuchet MS';
+    }
+
+    #status-box-title {
+      font-family: 'Trebuchet MS';
+      margin-top: 15px;
+      margin-left: 20px;
+    }
+
+    #status {
+      font-family: 'Trebuchet MS';
+      margin-left: 20px;
+    }
+
+  </style>
+  <body>
+    <h1 class="header-title">StarNotary Token DAPP</h1>
+
+  <hr>
+
+  <div class="info-box">
+    <h2 id="status-box-title">Status:</h2>
+    <span id="status"></span>
+    <br>
+  </div>
+
+
+  <br>
+  <div style="width: 100%; overflow: hidden;">
+  
+    <div class="starNotaryForm" style="float: left;">
+
+      <h1 class="form-title">Create a &#11088</h1>
+      <br><input type="text" id="starName" placeholder="  Star Name"></input>
+      <br><input type="text" id="starId" placeholder="  Star ID"></input>
+      <br><br><button class="submitButton" id="createStar" onclick="App.createStar()">Create Star</button>
+  
+    </div>
+    <div class="starNotaryForm" style="float: left;">
+      <h1 class="form-title">Exchange a &#11088</h1>
+      <br><input type="text" id="outcomeStarId" placeholder="  Your star ID"></input>
+      <br><input type="text" id="incomeStarId" placeholder="  Star to receive ID"></input>
+      <br><br><button class="submitButton" id="exchangeStar" onclick="App.exchange()">Exchange</button>
+  
+    </div>
+    <div class="starNotaryForm" style="float: right;">
+      <h1 class="form-title">Transfer a &#11088</h1>
+      <br><input type="text" id="transferStarId" placeholder="  Star ID"></input>
+      <br><input type="text" id="receiver" placeholder="  Receiver address"></input>
+      <br><br><button class="submitButton" id="transferStar" onclick="App.transfer()">Transfer</button>
+    </div>
+  
+  </div>
+
+
+    <br><br>
+    <script src="index.js"></script>
+  </body>
+</html>
