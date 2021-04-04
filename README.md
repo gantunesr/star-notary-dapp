@@ -1,7 +1,8 @@
-# Project 2: CryptoStar Dapp on Ethereum
-27 - 03 - 2021
+# CryptoStar Dapp on Ethereum
 
-## Project Details
+Project to create a NFT based on a star and register it in the ethereum network, which will act as a notary. Currently the contract is deployed in the Rinkeby testnet network in the following address: `0xe300510fDDB9e53080D8376943735bb0C70eFe4A`
+
+## Tool Stack
 
 ```
 truffle v5.2.5 (core: 5.2.5)
@@ -19,7 +20,7 @@ openzeppelin-solidity 4.40.0
 
 **Contract Address:** [0xe300510fDDB9e53080D8376943735bb0C70eFe4A](https://rinkeby.etherscan.io/address/0xe300510fDDB9e53080D8376943735bb0C70eFe4A)
 
-### Transactions
+### Transaction Examples
 
 1. Create star Andromeda (ID 111): [0x369022216f2e1a11be871bd0797c4e9fecffeeeffb43cca57cab81b6afb75542](https://rinkeby.etherscan.io/tx/0x369022216f2e1a11be871bd0797c4e9fecffeeeffb43cca57cab81b6afb75542)
 2. Create star Aquarius (ID 73): [0x10d12f425af305a93663bb71ba458cdad073ba0491d93f3d6f09bf6e9b1d1b68](https://rinkeby.etherscan.io/tx/0x10d12f425af305a93663bb71ba458cdad073ba0491d93f3d6f09bf6e9b1d1b68)
